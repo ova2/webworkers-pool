@@ -1,0 +1,41 @@
+{
+    "name": "webworkers-pool",
+    "version": "1.0.0",
+    "description": "Pool implementation for Web Workers threads",
+    "main": "dist/index",
+    "typings": "dist/index",
+    "scripts": {
+        "start": "parcel showcase/index.html --open",
+        "clean:dist": "del-cli dist",
+        "lint": "tslint -c tslint.json engine/src/**/*.ts",
+        "prebuild": "npm run clean:dist",
+        "build": "parcel build workers-pool/src/index.ts -d dist --no-source-maps",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ova2/webworkers-pool.git"
+    },
+    "keywords": [
+        "webgl",
+        "glsl",
+        "playground"
+    ],
+    "author": "Oleg Varaksin <ovaraksin@googlemail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ova2/webworkers-pool/issues"
+    },
+    "homepage": "https://github.com/ova2/webworkers-pool#readme",
+    "devDependencies": {
+        "del-cli": "~1.1.0",
+        "parcel-bundler": "~1.12.3",
+        "tslint": "~5.10.0",
+        "typescript": "~3.4.2"
+    },
+    "dependencies": {},
+    "files": [
+        "dist/index.js",
+        "dist/index.d.ts"
+    ]
+}
