@@ -9,7 +9,7 @@
     "clean:dist": "del-cli dist",
     "lint": "tslint -c tslint.json engine/src/**/*.ts",
     "prebuild": "npm run clean:dist",
-    "build": "parcel build workers-pool/src/index.ts -d dist --no-source-maps",
+    "build": "parcel build workers-pool/src/worker-pool.ts -d dist --no-source-maps",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -32,7 +32,9 @@
     "tslint": "~5.10.0",
     "typescript": "~3.4.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rxjs": "~6.4.0"
+  },
   "files": [
     "dist/index.js",
     "dist/index.d.ts"
