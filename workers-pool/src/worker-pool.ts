@@ -1,10 +1,10 @@
 export class WorkerPool {
 
-    public queueJob(): void {
+  public queueJob(): void {
 
-    }
+  }
 
-    public release(): void {
+  public release(): void {
 
-    }
+  }
 }
