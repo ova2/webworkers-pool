@@ -1,4 +1,4 @@
-# Pool implementation for Web Workers + Showcase
+# Pool implementation for Web Workers threads + Showcase
 
 ## Building and running on localhost
 
